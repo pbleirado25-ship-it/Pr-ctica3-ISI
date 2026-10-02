@@ -276,6 +276,7 @@ FR-017 se conserva para no perder el identificador histórico, pero su estado es
 
 ## 5. Requisitos no funcionales
 | ID | Categoría y atributo | Requisito no funcional | Ámbito (Global/Local) | UR/FR relacionados | Método de comprobación | Estado |
+| --- | --- | --- | --- | --- | --- | --- |
 | NFR-00 | NFR-Q | Después de un incidente grave la pérdida de información no podrá superar las 24 horas anteriores al incidente. | G | --- | Hacer una simulación de fallo y prueba de restauración cada 3 meses. | Aprobado |
 | NFR-01 | NFR-Q | Después de un incidente grave, la plataforma deberá recuperar sus funciones principales en un máximo de cuatro horas desde la declaración del incidente | G | --- | Hacer una simulación de fallo y prueba de restauración cada 3 meses. | Aprobado |
 | NFR-02 | NFR-Q | La plataforma ofrecerá servicio durante las 24 horas del día, con una disponibilidad mínima del 99,5 % en cada mes natural | G | --- | Se medirá mediante una comprobación automática realizada cada cinco minutos desde un sistema externo a la plataforma | Aprobado |
@@ -285,7 +286,6 @@ FR-017 se conserva para no perder el identificador histórico, pero su estado es
 | NFR-06 | NFR-I | La plataforma debe conectarse a un servicio de correo seguro para enviar avisos (registros, avisos de publicaciones y claves). | L | --- | Prueba de envío y recepción de correos transaccionales desde la aplicación | Aprobado |
 | NFR-07 | NFR | La plataforma debe cumplir la normativa de protección de datos (RGPD / LOPDGDD), protegiendo la información de salud y el acceso a las cuentas. | G | --- | Revisión de los controles de acceso | Aprobado |
 | NFR-08 | NFR-Q (Eficiencia; Escalabilidad; Mantenibilidad) | La plataforma mantendrá los objetivos de capacidad y rendimiento definidos para la primera versión sin intervención manual del personal de la organización. | G | --- | Prueba de carga automatizada con 100 usuarios concurrentes y 10 operaciones/s durante 30 min; comprobar mediante registros de monitorización, ausencia de intervención manual. | --- |
-
 Categorías y atributos: 
 1) Requisitos de calidad (NFR-Q): Rendimiento, Usabilidad, Seguridad, Fiabilidad, Disponibilidad, Modificabilidad, Portabilidad, Eficiencia, Escalabilidad, Verificabilidad / Testabilidad, Robustez, Seguridad funcional (safety), Integridad, Reusabilidad, Instalabilidad.
 2) Restricciones (NFR-R): Tecnología y entorno, Hardware, Regulaciones y estándares, Compatibilidad, Interfaces existentes, Restricciones presupuestarias y de gestión.
