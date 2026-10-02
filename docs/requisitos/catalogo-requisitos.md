@@ -277,6 +277,11 @@ FR-017 se conserva para no perder el identificador histórico, pero su estado es
 ## 5. Requisitos no funcionales
 
 | ID | Categoría y atributo | Requisito no funcional | Ámbito (Global/Local) | UR/FR relacionados | Método de comprobación | Estado |
+| NFR-01 | NFR-Q | Después de un incidente grave, la plataforma deberá recuperar sus funciones principales en un máximo de cuatro horas desde la declaración del incidente, y la pérdida de información no podrá superar las 24 horas anteriores al incidente. |G|---| Hacer una simulación de fallo y prueba de restauración cada 3 meses. | Aprobado |
+| NFR-02| NFR-Q | La plataforma ofrecerá servicio durante las 24 horas del día, con una disponibilidad mínima del 99,5 % en cada mes natural | G | --- | Se medirá mediante una comprobación automática realizada cada cinco minutos desde un sistema externo a la plataforma|Aprobado |
+| NFR-03 | NFR-R|  La autenticación se realizará utilizando OAuth 2.0 u OpenID Connect sobre HTTPS y que la plataforma no almacenará la contraseña de Google |L| --- | El cumplimiento se comprobará mediante una prueba de autenticación con una cuenta de prueba y la revisión de la configuración de la integración|Aprobado  |
+| NFR-04 | NFR-I |  La primera versión estará disponible en castellano y gallego, y la persona usuaria podrá cambiar el idioma de la interfaz entre ambos. Cuando se seleccione un idioma, los textos de navegación, formularios, validaciones y mensajes de la interfaz se mostrarán íntegramente en ese idioma.  |G| --- | La comprobación se realizará revisando todas las pantallas y mensajes de la primera versión en ambos idiomas. | Aprobado |
+| NFR-05 | NFR-Q | El sistema debe estar alojado en la nube y ser capaz de ampliar sus recursos automáticamente si hay picos de visitas. | G| --- | Prueba de carga observando el escalado automático de recursos en la nube | Aprobado |
 | --- | --- | --- | --- | --- | --- | --- |
 | NFR-07 |NFR-Q (Eficiencia; Escalabilidad; Mantenibilidad) |La plataforma mantendrá los objetivos de capacidad y rendimiento definidos para la primera versión sin intervención manual del personal de la organización.| G | -  | Prueba de carga automatizada con 100 usuarios concurrentes y 10 operaciones/s durante 30 min; comprobar mediante registros de monitorización, ausencia de intervención manual. | - |
 
